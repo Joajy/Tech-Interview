@@ -22,11 +22,18 @@
 
 
 <details>
-  <summary><h3>3. 트랜잭션이 무엇이고, ACID 원칙에 대해 설명해 주세요.</h3></summary>
+  <summary><h3>3. 트랜잭션이 무엇이고, ACID 원칙에 대해 설명해 주세요.</h3></summary><br>
+  -> <strong>트랜잭션: DB의 상태를 변화시키는 최소 작업 단위로, 트랜잭션 내의 모든 연산이 수행된 후에 상태를 변화시킬 수 있게 됩니다.</strong><br>
+  -> <strong>ACID</strong><br>
+  -> <strong>Atomicity: 트랜잭션의 모든 연산이 성공해야 트랜잭션이 성공이며, 하나의 연산이라도 실패할 경우 실패한 트랜잭션이 된다는 특징입니다.</strong><br>
+  -> <strong>Consistency: DB의 상태는 유효한 상태로만 변화할 수 있습니다.</strong><br>
+  -> <strong>Isolation: 트랜잭션은 독립된 상태로 존재해야 하며, 다른 트랜잭션의 개입을 받지 않습니다.</strong><br>
+  -> <strong>Durability: 트랜잭션이 커밋된 후에는 시스템 오류나 다른 문제가 발생하더라도 커밋된 상태를 유지한다는 특징입니다.</strong><br>
 <ul>
 <li> ACID 원칙 중, Durability를 DBMS는 어떻게 보장하나요?</li>
 <li> 트랜잭션을 사용해 본 경험이 있나요? 어떤 경우에 사용할 수 있나요?</li>
 <li> 읽기에는 트랜잭션을 걸지 않아도 될까요?</li>
+  -> <strong>수정이 완료되기 전의 다른 트랜잭션 데이터를 읽을 수 있으므로 트랜잭션을 걸어주는 것이 좋을 것이라 생각합니다.</strong>
 </ul>
 </details>
 
